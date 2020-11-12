@@ -15,10 +15,10 @@ var chart = new Chart(ctx, {
         datasets: [{
             label: "Views",
             data: [40, 90, 210, 160, 230],
-            backgroundColor: 'rgba(6,181,144,0.1)',
-            borderColor: '#06b590',
+            backgroundColor: '#2A2731',
+            borderColor: '#2A2731',
             pointBorderColor: '#ffffff',
-            pointBackgroundColor: '#06b590',
+            pointBackgroundColor: '#2A2731',
             pointBorderWidth: 2,
             pointRadius: 4
 

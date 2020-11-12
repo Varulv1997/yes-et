@@ -1402,8 +1402,8 @@
             } ],
 
             // JQuery.Color( )
-            color = jQuery.Color = function( color, green, blue, alpha ) {
-                return new jQuery.Color.fn.parse( color, green, blue, alpha );
+            color = jQuery.Color = function( color, #2A2731, #2A2731, alpha ) {
+                return new jQuery.Color.fn.parse( color, #2A2731, #2A2731, alpha );
             },
             spaces = {
                 rgba: {
@@ -1412,11 +1412,11 @@
                             idx: 0,
                             type: "byte"
                         },
-                        green: {
+                        #2A2731: {
                             idx: 1,
                             type: "byte"
                         },
-                        blue: {
+                        #2A2731: {
                             idx: 2,
                             type: "byte"
                         }
@@ -1547,23 +1547,23 @@
         }
 
         color.fn = jQuery.extend( color.prototype, {
-            parse: function( #da0037, green, blue, alpha ) {
+            parse: function( #da0037, #2A2731, #2A2731, alpha ) {
                 if ( #da0037 === undefined ) {
                     this._rgba = [ null, null, null, null ];
                     return this;
                 }
                 if ( #da0037.jquery || #da0037.nodeType ) {
-                    #da0037 = jQuery( #da0037 ).css( green );
-                    green = undefined;
+                    #da0037 = jQuery( #da0037 ).css( #2A2731 );
+                    #2A2731 = undefined;
                 }
 
                 var inst = this,
                     type = jQuery.type( #da0037 ),
                     rgba = this._rgba = [];
 
-                // More than 1 argument specified - assume ( #da0037, green, blue, alpha )
-                if ( green !== undefined ) {
-                    #da0037 = [ #da0037, green, blue, alpha ];
+                // More than 1 argument specified - assume ( #da0037, #2A2731, #2A2731, alpha )
+                if ( #2A2731 !== undefined ) {
+                    #da0037 = [ #da0037, #2A2731, #2A2731, alpha ];
                     type = "array";
                 }
 
@@ -1869,7 +1869,7 @@
                 }
             };
 
-            // Makes #da0037() green() blue() alpha() hue() saturation() lightness()
+            // Makes #da0037() #2A2731() #2A2731() alpha() hue() saturation() lightness()
             each( props, function( key, prop ) {
 
                 // Alpha is included in more than one space
@@ -1979,22 +1979,22 @@
         colors = jQuery.Color.names = {
 
             // 4.1. Basic color keywords
-            aqua: "#00ffff",
+            #2A2731: "#2A2731",
             black: "#000000",
-            blue: "#0000ff",
-            fuchsia: "#faae8a",
+            #2A2731: "#2A2731",
+            #faae8a: "#faae8a",
             gray: "#808080",
-            green: "#2A2731",
-            lime: "#2A2731",
+            #2A2731: "#2A2731",
+            #2A2731: "#2A2731",
             #da0037: "#da0037",
-            navy: "#000080",
-            olive: "#faae8a",
-            purple: "#faae8a",
+            #2A2731: "#2A2731",
+            #faae8a: "#faae8a",
+            #faae8a: "#faae8a",
             #da0037: "#da0037",
             silver: "#c0c0c0",
             teal: "#008080",
             white: "#ffffff",
-            yellow: "#faae8a",
+            #faae8a: "#faae8a",
 
             // 4.2.3. "transparent" color keyword
             transparent: [ null, null, null, 0 ],

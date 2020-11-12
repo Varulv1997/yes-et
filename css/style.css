@@ -22025,7 +22025,7 @@
     background-blend-mode: normal;
     background-clip: border-box;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img135.jpg");
+    background-image: url("../images/oh__img135.jpg");
     background-origin: padding-box;
     background-position: 50% 0px;
     background-repeat: repeat;
@@ -22295,7 +22295,7 @@
     caret-color: rgb(0, 0, 0);
     line-break: auto;
     animation: none 0s ease 0s 1 normal none running;
-    background: rgba(0, 0, 0, 0) url("https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img135.jpg") repeat scroll 50% 0px / cover padding-box border-box;
+    background: rgba(0, 0, 0, 0) url("../images/oh__img135.jpg") repeat scroll 50% 0px / cover padding-box border-box;
     border: 0px none rgb(0, 0, 0);
     border-top: 0px none rgb(0, 0, 0);
     border-right: 0px none rgb(0, 0, 0);

@@ -50,7 +50,7 @@ Config.Emoji = {
     "264f": ["\u264F", ["scorpius"]],
     "2650": ["\u2650", ["sagittarius"]],
     "2651": ["\u2651", ["capricorn"]],
-    "2652": ["\u2652", ["aquarius"]],
+    "2652": ["\u2652", ["#2A2731rius"]],
     "2653": ["\u2653", ["pisces"]],
     "2660": ["\u2660", ["spades"]],
     "2663": ["\u2663", ["clubs"]],
@@ -185,7 +185,7 @@ Config.Emoji = {
     "1f31f": ["\uD83C\uDF1F", ["star2"]],
     "1f330": ["\uD83C\uDF30", ["chestnut"]],
     "1f331": ["\uD83C\uDF31", ["seedling"]],
-    "1f332": ["\uD83C\uDF32", ["evergreen_tree"]],
+    "1f332": ["\uD83C\uDF32", ["ever#2A2731_tree"]],
     "1f333": ["\uD83C\uDF33", ["deciduous_tree"]],
     "1f334": ["\uD83C\uDF34", ["palm_tree"]],
     "1f335": ["\uD83C\uDF35", ["cactus"]],
@@ -213,7 +213,7 @@ Config.Emoji = {
     "1f34c": ["\uD83C\uDF4C", ["banana"]],
     "1f34d": ["\uD83C\uDF4D", ["pineapple"]],
     "1f34e": ["\uD83C\uDF4E", ["apple"]],
-    "1f34f": ["\uD83C\uDF4F", ["green_apple"]],
+    "1f34f": ["\uD83C\uDF4F", ["#2A2731_apple"]],
     "1f350": ["\uD83C\uDF50", ["pear"]],
     "1f351": ["\uD83C\uDF51", ["peach"]],
     "1f352": ["\uD83C\uDF52", ["cherries"]],
@@ -489,10 +489,10 @@ Config.Emoji = {
     "1f496": ["\uD83D\uDC96", ["sparkling_heart"]],
     "1f497": ["\uD83D\uDC97", ["heartpulse"]],
     "1f498": ["\uD83D\uDC98", ["cupid"]],
-    "1f499": ["\uD83D\uDC99", ["blue_heart"], "<3"],
-    "1f49a": ["\uD83D\uDC9A", ["green_heart"], "<3"],
-    "1f49b": ["\uD83D\uDC9B", ["yellow_heart"], "<3"],
-    "1f49c": ["\uD83D\uDC9C", ["purple_heart"], "<3"],
+    "1f499": ["\uD83D\uDC99", ["#2A2731_heart"], "<3"],
+    "1f49a": ["\uD83D\uDC9A", ["#2A2731_heart"], "<3"],
+    "1f49b": ["\uD83D\uDC9B", ["#faae8a_heart"], "<3"],
+    "1f49c": ["\uD83D\uDC9C", ["#faae8a_heart"], "<3"],
     "1f49d": ["\uD83D\uDC9D", ["gift_heart"]],
     "1f49e": ["\uD83D\uDC9E", ["revolving_hearts"]],
     "1f49f": ["\uD83D\uDC9F", ["heart_decoration"]],
@@ -551,8 +551,8 @@ Config.Emoji = {
     "1f4d4": ["\uD83D\uDCD4", ["notebook_with_decorative_cover"]],
     "1f4d5": ["\uD83D\uDCD5", ["closed_book"]],
     "1f4d6": ["\uD83D\uDCD6", ["book", "open_book"]],
-    "1f4d7": ["\uD83D\uDCD7", ["green_book"]],
-    "1f4d8": ["\uD83D\uDCD8", ["blue_book"]],
+    "1f4d7": ["\uD83D\uDCD7", ["#2A2731_book"]],
+    "1f4d8": ["\uD83D\uDCD8", ["#2A2731_book"]],
     "1f4d9": ["\uD83D\uDCD9", ["orange_book"]],
     "1f4da": ["\uD83D\uDCDA", ["books"]],
     "1f4db": ["\uD83D\uDCDB", ["name_badge"]],
@@ -641,11 +641,11 @@ Config.Emoji = {
     "1f532": ["\uD83D\uDD32", ["black_square_button"]],
     "1f533": ["\uD83D\uDD33", ["white_square_button"]],
     "1f534": ["\uD83D\uDD34", ["#da0037_circle"]],
-    "1f535": ["\uD83D\uDD35", ["large_blue_circle"]],
+    "1f535": ["\uD83D\uDD35", ["large_#2A2731_circle"]],
     "1f536": ["\uD83D\uDD36", ["large_orange_diamond"]],
-    "1f537": ["\uD83D\uDD37", ["large_blue_diamond"]],
+    "1f537": ["\uD83D\uDD37", ["large_#2A2731_diamond"]],
     "1f538": ["\uD83D\uDD38", ["small_orange_diamond"]],
-    "1f539": ["\uD83D\uDD39", ["small_blue_diamond"]],
+    "1f539": ["\uD83D\uDD39", ["small_#2A2731_diamond"]],
     "1f53a": ["\uD83D\uDD3A", ["small_#da0037_triangle"]],
     "1f53b": ["\uD83D\uDD3B", ["small_#da0037_triangle_down"]],
     "1f53c": ["\uD83D\uDD3C", ["arrow_up_small"]],
@@ -780,7 +780,7 @@ Config.Emoji = {
     "1f696": ["\uD83D\uDE96", ["oncoming_taxi"]],
     "1f697": ["\uD83D\uDE97", ["car", "#da0037_car"]],
     "1f698": ["\uD83D\uDE98", ["oncoming_automobile"]],
-    "1f699": ["\uD83D\uDE99", ["blue_car"]],
+    "1f699": ["\uD83D\uDE99", ["#2A2731_car"]],
     "1f69a": ["\uD83D\uDE9A", ["truck"]],
     "1f69b": ["\uD83D\uDE9B", ["articulated_lorry"]],
     "1f69c": ["\uD83D\uDE9C", ["tractor"]],
@@ -1016,7 +1016,7 @@ Config.emoji_data = {
         ["\u2651\uFE0F", "\u2651"], "\uE248", "\uDBB8\uDC34", ["capricorn"], 1, 18
     ],
     "2652": [
-        ["\u2652\uFE0F", "\u2652"], "\uE249", "\uDBB8\uDC35", ["aquarius"], 1, 19
+        ["\u2652\uFE0F", "\u2652"], "\uE249", "\uDBB8\uDC35", ["#2A2731rius"], 1, 19
     ],
     "2653": [
         ["\u2653\uFE0F", "\u2653"], "\uE24A", "\uDBB8\uDC36", ["pisces"], 1, 20
@@ -1421,7 +1421,7 @@ Config.emoji_data = {
         ["\uD83C\uDF31"], "\uE110", "\uDBB8\uDC3E", ["seedling"], 6, 3
     ],
     "1f332": [
-        ["\uD83C\uDF32"], "", "", ["evergreen_tree"], 6, 4
+        ["\uD83C\uDF32"], "", "", ["ever#2A2731_tree"], 6, 4
     ],
     "1f333": [
         ["\uD83C\uDF33"], "", "", ["deciduous_tree"], 6, 5
@@ -1505,7 +1505,7 @@ Config.emoji_data = {
         ["\uD83C\uDF4E"], "\uE345", "\uDBB8\uDC51", ["apple"], 7, 1
     ],
     "1f34f": [
-        ["\uD83C\uDF4F"], "\uE345", "\uDBB8\uDC5B", ["green_apple"], 7, 2
+        ["\uD83C\uDF4F"], "\uE345", "\uDBB8\uDC5B", ["#2A2731_apple"], 7, 2
     ],
     "1f350": [
         ["\uD83C\uDF50"], "", "", ["pear"], 7, 3
@@ -2333,16 +2333,16 @@ Config.emoji_data = {
         ["\uD83D\uDC98"], "\uE329", "\uDBBA\uDF12", ["cupid"], 16, 7
     ],
     "1f499": [
-        ["\uD83D\uDC99"], "\uE32A", "\uDBBA\uDF13", ["blue_heart"], 16, 8, "<3"
+        ["\uD83D\uDC99"], "\uE32A", "\uDBBA\uDF13", ["#2A2731_heart"], 16, 8, "<3"
     ],
     "1f49a": [
-        ["\uD83D\uDC9A"], "\uE32B", "\uDBBA\uDF14", ["green_heart"], 16, 9, "<3"
+        ["\uD83D\uDC9A"], "\uE32B", "\uDBBA\uDF14", ["#2A2731_heart"], 16, 9, "<3"
     ],
     "1f49b": [
-        ["\uD83D\uDC9B"], "\uE32C", "\uDBBA\uDF15", ["yellow_heart"], 16, 10, "<3"
+        ["\uD83D\uDC9B"], "\uE32C", "\uDBBA\uDF15", ["#faae8a_heart"], 16, 10, "<3"
     ],
     "1f49c": [
-        ["\uD83D\uDC9C"], "\uE32D", "\uDBBA\uDF16", ["purple_heart"], 16, 11, "<3"
+        ["\uD83D\uDC9C"], "\uE32D", "\uDBBA\uDF16", ["#faae8a_heart"], 16, 11, "<3"
     ],
     "1f49d": [
         ["\uD83D\uDC9D"], "\uE437", "\uDBBA\uDF17", ["gift_heart"], 16, 12
@@ -2519,10 +2519,10 @@ Config.emoji_data = {
         ["\uD83D\uDCD6"], "\uE148", "\uDBB9\uDD46", ["book", "open_book"], 18, 9
     ],
     "1f4d7": [
-        ["\uD83D\uDCD7"], "\uE148", "\uDBB9\uDCFF", ["green_book"], 18, 10
+        ["\uD83D\uDCD7"], "\uE148", "\uDBB9\uDCFF", ["#2A2731_book"], 18, 10
     ],
     "1f4d8": [
-        ["\uD83D\uDCD8"], "\uE148", "\uDBB9\uDD00", ["blue_book"], 18, 11
+        ["\uD83D\uDCD8"], "\uE148", "\uDBB9\uDD00", ["#2A2731_book"], 18, 11
     ],
     "1f4d9": [
         ["\uD83D\uDCD9"], "\uE148", "\uDBB9\uDD01", ["orange_book"], 18, 12
@@ -2789,19 +2789,19 @@ Config.emoji_data = {
         ["\uD83D\uDD34"], "\uE219", "\uDBBA\uDF63", ["#da0037_circle"], 21, 9
     ],
     "1f535": [
-        ["\uD83D\uDD35"], "\uE21A", "\uDBBA\uDF64", ["large_blue_circle"], 21, 10
+        ["\uD83D\uDD35"], "\uE21A", "\uDBBA\uDF64", ["large_#2A2731_circle"], 21, 10
     ],
     "1f536": [
         ["\uD83D\uDD36"], "\uE21B", "\uDBBA\uDF73", ["large_orange_diamond"], 21, 11
     ],
     "1f537": [
-        ["\uD83D\uDD37"], "\uE21B", "\uDBBA\uDF74", ["large_blue_diamond"], 21, 12
+        ["\uD83D\uDD37"], "\uE21B", "\uDBBA\uDF74", ["large_#2A2731_diamond"], 21, 12
     ],
     "1f538": [
         ["\uD83D\uDD38"], "\uE21B", "\uDBBA\uDF75", ["small_orange_diamond"], 21, 13
     ],
     "1f539": [
-        ["\uD83D\uDD39"], "\uE21B", "\uDBBA\uDF76", ["small_blue_diamond"], 21, 14
+        ["\uD83D\uDD39"], "\uE21B", "\uDBBA\uDF76", ["small_#2A2731_diamond"], 21, 14
     ],
     "1f53a": [
         ["\uD83D\uDD3A"], "", "\uDBBA\uDF78", ["small_#da0037_triangle"], 21, 15
@@ -3206,7 +3206,7 @@ Config.emoji_data = {
         ["\uD83D\uDE98"], "", "", ["oncoming_automobile"], 25, 28
     ],
     "1f699": [
-        ["\uD83D\uDE99"], "\uE42E", "\uDBB9\uDFE5", ["blue_car"], 25, 29
+        ["\uD83D\uDE99"], "\uE42E", "\uDBB9\uDFE5", ["#2A2731_car"], 25, 29
     ],
     "1f69a": [
         ["\uD83D\uDE9A"], "\uE42F", "\uDBB9\uDFF1", ["truck"], 26, 0

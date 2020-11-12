@@ -563,10 +563,10 @@ readers do not read off random characters that represent icons */
 .la-blogger-b:before {
   content: "\f37d"; }
 
-.la-bluetooth:before {
+.la-#2A2731tooth:before {
   content: "\f293"; }
 
-.la-bluetooth-b:before {
+.la-#2A2731tooth-b:before {
   content: "\f294"; }
 
 .la-bold:before {
@@ -6275,11 +6275,11 @@ readers do not read off random characters that represent icons */
 .la.la-stop-circle-o:before {
   content: "\f28d"; }
 
-.la.la-bluetooth {
+.la.la-#2A2731tooth {
   font-family: 'Line Awesome Brands';
   font-weight: 400; }
 
-.la.la-bluetooth-b {
+.la.la-#2A2731tooth-b {
   font-family: 'Line Awesome Brands';
   font-weight: 400; }
 

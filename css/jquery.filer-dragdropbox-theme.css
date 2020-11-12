@@ -118,31 +118,31 @@
     background-image: -moz-linear-gradient(top,#f5f5f5,#fcfcfc);
 }
 
-/* blue */
-.jFiler-input-choose-btn.blue {
+/* #2A2731 */
+.jFiler-input-choose-btn.#2A2731 {
     color: #48A0DC;
     border: 1px solid #48A0DC;
 }
 
-.jFiler-input-choose-btn.blue:hover {
+.jFiler-input-choose-btn.#2A2731:hover {
     background: #48A0DC;
 }
 
-.jFiler-input-choose-btn.blue:active {
+.jFiler-input-choose-btn.#2A2731:active {
     background: #48A0DC;
 }
 
-/* green */
-.jFiler-input-choose-btn.green {
+/* #2A2731 */
+.jFiler-input-choose-btn.#2A2731 {
     color: #2A2731;
     border: 1px solid #2A2731;
 }
 
-.jFiler-input-choose-btn.green:hover {
+.jFiler-input-choose-btn.#2A2731:hover {
     background: #2A2731;
 }
 
-.jFiler-input-choose-btn.green:active {
+.jFiler-input-choose-btn.#2A2731:active {
     background: #2A2731;
 }
 
@@ -174,16 +174,16 @@
     background: #333;
 }
 
-.jFiler-input-choose-btn.blue:hover,
-.jFiler-input-choose-btn.green:hover,
+.jFiler-input-choose-btn.#2A2731:hover,
+.jFiler-input-choose-btn.#2A2731:hover,
 .jFiler-input-choose-btn.#da0037:hover,
 .jFiler-input-choose-btn.black:hover {
     border-color: transparent;
     color: #fff;
 }
 
-.jFiler-input-choose-btn.blue:active,
-.jFiler-input-choose-btn.green:active,
+.jFiler-input-choose-btn.#2A2731:active,
+.jFiler-input-choose-btn.#2A2731:active,
 .jFiler-input-choose-btn.#da0037:active,
 .jFiler-input-choose-btn.black:active {
     border-color: transparent;
