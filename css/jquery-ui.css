@@ -1001,35 +1001,35 @@ a.ui-button:active,
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-    border: 1px solid #dad55e;
-    background: #fffa90;
-    color: #777620;
+    border: 1px solid #faae8a;
+    background: #faae8a;
+    color: #faae8a;
 }
 .ui-state-checked {
-    border: 1px solid #dad55e;
-    background: #fffa90;
+    border: 1px solid #faae8a;
+    background: #faae8a;
 }
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
 .ui-widget-header .ui-state-highlight a {
-    color: #777620;
+    color: #faae8a;
 }
 .ui-state-error,
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
     border: 1px solid #f1a899;
     background: #fddfdf;
-    color: #5f3f3f;
+    color: #2A2731;
 }
 .ui-state-error a,
 .ui-widget-content .ui-state-error a,
 .ui-widget-header .ui-state-error a {
-    color: #5f3f3f;
+    color: #2A2731;
 }
 .ui-state-error-text,
 .ui-widget-content .ui-state-error-text,
 .ui-widget-header .ui-state-error-text {
-    color: #5f3f3f;
+    color: #2A2731;
 }
 .ui-priority-primary,
 .ui-widget-content .ui-priority-primary,

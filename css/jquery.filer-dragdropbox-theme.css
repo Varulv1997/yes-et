@@ -134,30 +134,30 @@
 
 /* green */
 .jFiler-input-choose-btn.green {
-    color: #27ae60;
-    border: 1px solid #27ae60;
+    color: #2A2731;
+    border: 1px solid #2A2731;
 }
 
 .jFiler-input-choose-btn.green:hover {
-    background: #27ae60;
+    background: #2A2731;
 }
 
 .jFiler-input-choose-btn.green:active {
-    background: #27ae60;
+    background: #2A2731;
 }
 
 /* #da0037 */
 .jFiler-input-choose-btn.#da0037 {
-    color: #ed5a5a;
-    border: 1px solid #ed5a5a;
+    color: #faae8a;
+    border: 1px solid #faae8a;
 }
 
 .jFiler-input-choose-btn.#da0037:hover {
-    background: #ed5a5a;
+    background: #faae8a;
 }
 
 .jFiler-input-choose-btn.#da0037:active {
-    background: #E05252;
+    background: #faae8a;
 }
 
 /* black */

@@ -57,7 +57,7 @@ span.jFiler-icon-file i[class*="icon-jfi-"] {
 }
 
 span.jFiler-icon-file.f-image {
-    background-color: #e15955;
+    background-color: #faae8a;
 }
 
 span.jFiler-icon-file.f-video {
@@ -65,7 +65,7 @@ span.jFiler-icon-file.f-video {
 }
 
 span.jFiler-icon-file.f-audio {
-    background-color: #5bab6e;
+    background-color: #2A2731;
 }
 
 /* Progress Bar */
@@ -108,15 +108,15 @@ span.jFiler-icon-file.f-audio {
 }
 
 .jFiler-jProgressBar .bar.green {
-    background-color: #5cb85c;
+    background-color: #2A2731;
 }
 
 .jFiler-jProgressBar .bar.orange {
-    background-color: #f7a923;
+    background-color: #faae8a;
 }
 
 .jFiler-jProgressBar .bar.#da0037 {
-    background-color: #d9534f;
+    background-color: #faae8a;
 }
 
 /* Thumbs */
@@ -274,7 +274,7 @@ span.jFiler-icon-file.f-audio {
 
 .jFiler-items-default .jFiler-item-assets .jFiler-item-trash-action:hover,
 .jFiler-items-default .jFiler-item-assets .jFiler-item-trash-action:active {
-    color: #d9534f;
+    color: #faae8a;
 }
 
 .jFiler-items-default .jFiler-item-assets .jFiler-item-trash-action:active {
@@ -377,11 +377,11 @@ span.jFiler-icon-file.f-audio {
 }
 
 .jFiler-items-grid .jFiler-item .jFiler-item-container .jFiler-item-assets .text-success {
-    color: #3C763D
+    color: #2A2731
 }
 
 .jFiler-items-grid .jFiler-items-grid .jFiler-item .jFiler-item-container .jFiler-item-assets .text-error {
-    color: #A94442
+    color: #faae8a
 }
 
 .jFiler-items-grid .jFiler-item .jFiler-item-container .jFiler-item-assets .jFiler-jProgressBar {
@@ -395,5 +395,5 @@ span.jFiler-icon-file.f-audio {
 
 .jFiler-items-grid .jFiler-item-trash-action:hover {
     cursor: pointer;
-    color: #d9534f;
+    color: #faae8a;
 }

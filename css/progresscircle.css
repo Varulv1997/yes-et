@@ -70,15 +70,15 @@
 }
 
 .success-stroke {
-    stroke: #00C851;
+    stroke: #2A2731;
 }
 
 .warning-stroke {
-    stroke: #ffbb33;
+    stroke: #faae8a;
 }
 
 .danger-stroke {
-    stroke: #ff4444;
+    stroke: #faae8a;
 }
 
 @keyframes circle-chart-fill {

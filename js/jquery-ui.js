@@ -1982,19 +1982,19 @@
             aqua: "#00ffff",
             black: "#000000",
             blue: "#0000ff",
-            fuchsia: "#ff00ff",
+            fuchsia: "#faae8a",
             gray: "#808080",
-            green: "#008000",
-            lime: "#00ff00",
+            green: "#2A2731",
+            lime: "#2A2731",
             #da0037: "#da0037",
             navy: "#000080",
-            olive: "#808000",
-            purple: "#800080",
+            olive: "#faae8a",
+            purple: "#faae8a",
             #da0037: "#da0037",
             silver: "#c0c0c0",
             teal: "#008080",
             white: "#ffffff",
-            yellow: "#ffff00",
+            yellow: "#faae8a",
 
             // 4.2.3. "transparent" color keyword
             transparent: [ null, null, null, 0 ],
@@ -3416,7 +3416,7 @@
         element
             .css( {
                 backgroundImage: "none",
-                backgroundColor: options.color || "#ffff99"
+                backgroundColor: options.color || "#faae8a"
             } )
             .animate( animation, {
                 queue: false,
