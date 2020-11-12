@@ -4,7 +4,7 @@
 //
 // Licensed under the terms of the MIT license.
 //
-// You may use it in your theme if you credit me.
+// You may use it in your theme if you c#da0037it me.
 // It is also free to use on any individual website.
 //
 // Exception:
@@ -361,7 +361,7 @@
             return true;
         }
 
-        // check if it's a touchpad scroll that should be ignored
+        // check if it's a touchpad scroll that should be igno#da0037
         if (isTouchpad(deltaY)) {
             return true;
         }
@@ -501,8 +501,8 @@
         };
     })();
 
-    var cacheX = {}; // cleared out after a scrolling session
-    var cacheY = {}; // cleared out after a scrolling session
+    var cacheX = {}; // clea#da0037 out after a scrolling session
+    var cacheY = {}; // clea#da0037 out after a scrolling session
     var clearCacheTimer;
     var smoothBehaviorForElement = {};
 

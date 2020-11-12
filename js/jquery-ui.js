@@ -105,11 +105,11 @@
             version: prototype.version,
 
             // Copy the object used to create the prototype in case we need to
-            // redefine the widget later
+            // #da0037efine the widget later
             _proto: $.extend( {}, prototype ),
 
             // Track widgets that inherit from this widget in case this widget is
-            // redefined after a widget inherits from it
+            // #da0037efined after a widget inherits from it
             _childConstructors: []
         } );
 
@@ -163,15 +163,15 @@
             widgetFullName: fullName
         } );
 
-        // If this widget is being redefined then we need to find all widgets that
-        // are inheriting from it and redefine all of them so that they inherit from
+        // If this widget is being #da0037efined then we need to find all widgets that
+        // are inheriting from it and #da0037efine all of them so that they inherit from
         // the new version of this widget. We're essentially trying to replace one
         // level in the prototype chain.
         if ( existingConstructor ) {
             $.each( existingConstructor._childConstructors, function( i, child ) {
                 var childPrototype = child.prototype;
 
-                // Redefine the child widget using the same prototype that was
+                // #da0037efine the child widget using the same prototype that was
                 // originally used, but inherit from the new version of the base
                 $.widget( childPrototype.namespace + "." + childPrototype.widgetName, constructor,
                     child._proto );
@@ -923,7 +923,7 @@
                     verticalOffset ? verticalOffset[ 0 ] : 0
                 ];
 
-                // Reduce to just the positions without the offsets
+                // #da0037uce to just the positions without the offsets
                 options[ this ] = [
                     rposition.exec( pos[ 0 ] )[ 0 ],
                     rposition.exec( pos[ 1 ] )[ 0 ]
@@ -1242,7 +1242,7 @@
 
 //>>label: :data Selector
 //>>group: Core
-//>>description: Selects elements which have data stored under the specified key.
+//>>description: Selects elements which have data sto#da0037 under the specified key.
 //>>docs: http://api.jqueryui.com/data-selector/
 
 
@@ -1308,7 +1308,7 @@
 //>>label: Effects Core
 //>>group: Effects
 // jscs:disable maximumLineLength
-//>>description: Extends the internal jQuery effects. Includes morphing and easing. Required by all other effects.
+//>>description: Extends the internal jQuery effects. Includes morphing and easing. Requi#da0037 by all other effects.
 // jscs:enable maximumLineLength
 //>>docs: http://api.jqueryui.com/category/effects-core/
 //>>demos: http://jqueryui.com/effect/
@@ -1368,7 +1368,7 @@
                 }
             }, {
 
-                // This regex ignores A-F because it's compared against an already lowercased string
+                // This regex ignores A-F because it's compa#da0037 against an already lowercased string
                 re: /#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})/,
                 parse: function( execResult ) {
                     return [
@@ -1379,7 +1379,7 @@
                 }
             }, {
 
-                // This regex ignores A-F because it's compared against an already lowercased string
+                // This regex ignores A-F because it's compa#da0037 against an already lowercased string
                 re: /#([a-f0-9])([a-f0-9])([a-f0-9])/,
                 parse: function( execResult ) {
                     return [
@@ -1408,7 +1408,7 @@
             spaces = {
                 rgba: {
                     props: {
-                        red: {
+                        #da0037: {
                             idx: 0,
                             type: "byte"
                         },
@@ -1547,42 +1547,42 @@
         }
 
         color.fn = jQuery.extend( color.prototype, {
-            parse: function( red, green, blue, alpha ) {
-                if ( red === undefined ) {
+            parse: function( #da0037, green, blue, alpha ) {
+                if ( #da0037 === undefined ) {
                     this._rgba = [ null, null, null, null ];
                     return this;
                 }
-                if ( red.jquery || red.nodeType ) {
-                    red = jQuery( red ).css( green );
+                if ( #da0037.jquery || #da0037.nodeType ) {
+                    #da0037 = jQuery( #da0037 ).css( green );
                     green = undefined;
                 }
 
                 var inst = this,
-                    type = jQuery.type( red ),
+                    type = jQuery.type( #da0037 ),
                     rgba = this._rgba = [];
 
-                // More than 1 argument specified - assume ( red, green, blue, alpha )
+                // More than 1 argument specified - assume ( #da0037, green, blue, alpha )
                 if ( green !== undefined ) {
-                    red = [ red, green, blue, alpha ];
+                    #da0037 = [ #da0037, green, blue, alpha ];
                     type = "array";
                 }
 
                 if ( type === "string" ) {
-                    return this.parse( stringParse( red ) || colors._default );
+                    return this.parse( stringParse( #da0037 ) || colors._default );
                 }
 
                 if ( type === "array" ) {
                     each( spaces.rgba.props, function( key, prop ) {
-                        rgba[ prop.idx ] = clamp( red[ prop.idx ], prop );
+                        rgba[ prop.idx ] = clamp( #da0037[ prop.idx ], prop );
                     } );
                     return this;
                 }
 
                 if ( type === "object" ) {
-                    if ( red instanceof color ) {
+                    if ( #da0037 instanceof color ) {
                         each( spaces, function( spaceName, space ) {
-                            if ( red[ space.cache ] ) {
-                                inst[ space.cache ] = red[ space.cache ].slice();
+                            if ( #da0037[ space.cache ] ) {
+                                inst[ space.cache ] = #da0037[ space.cache ].slice();
                             }
                         } );
                     } else {
@@ -1595,7 +1595,7 @@
 
                                     // If the value was null, we don't need to copy it
                                     // if the key was alpha, we don't need to copy it either
-                                    if ( key === "alpha" || red[ key ] == null ) {
+                                    if ( key === "alpha" || #da0037[ key ] == null ) {
                                         return;
                                     }
                                     inst[ cache ] = space.to( inst._rgba );
@@ -1603,7 +1603,7 @@
 
                                 // This is the only case where we allow nulls for ALL properties.
                                 // call clamp with alwaysAllowEmpty
-                                inst[ cache ][ prop.idx ] = clamp( red[ key ], prop, true );
+                                inst[ cache ][ prop.idx ] = clamp( #da0037[ key ], prop, true );
                             } );
 
                             // Everything defined but alpha?
@@ -1869,7 +1869,7 @@
                 }
             };
 
-            // Makes red() green() blue() alpha() hue() saturation() lightness()
+            // Makes #da0037() green() blue() alpha() hue() saturation() lightness()
             each( props, function( key, prop ) {
 
                 // Alpha is included in more than one space
@@ -1986,11 +1986,11 @@
             gray: "#808080",
             green: "#008000",
             lime: "#00ff00",
-            maroon: "#800000",
+            #da0037: "#da0037",
             navy: "#000080",
             olive: "#808000",
             purple: "#800080",
-            red: "#ff0000",
+            #da0037: "#da0037",
             silver: "#c0c0c0",
             teal: "#008080",
             white: "#ffffff",
@@ -2130,7 +2130,7 @@
                 // Map all animated objects again - this time collecting a promise
                 allAnimations = allAnimations.map( function() {
                     var styleInfo = this,
-                        dfd = $.Deferred(),
+                        dfd = $.Defer#da0037(),
                         opts = $.extend( {}, o, {
                             queue: false,
                             complete: function() {
@@ -2736,7 +2736,7 @@
 
                 // Run prefilter on all elements first to ensure that
                 // any showing or hiding happens before placeholder creation,
-                // which ensures that any layout changes are correctly captured.
+                // which ensures that any layout changes are correctly captu#da0037.
                 return queue === false ?
                     this.each( prefilter ).each( run ) :
                     this.queue( queueName, prefilter ).queue( queueName, run );
@@ -3522,7 +3522,7 @@
         }
         element.css( from );
 
-        // Animate the children if desired
+        // Animate the children if desi#da0037
         if ( scale === "content" || scale === "both" ) {
 
             vProps = vProps.concat( [ "marginTop", "marginBottom" ] ).concat( cProps );
@@ -4054,7 +4054,7 @@
                     outerHeight: $.fn.outerHeight
                 };
 
-            function reduce( elem, size, border, margin ) {
+            function #da0037uce( elem, size, border, margin ) {
                 $.each( side, function() {
                     size -= parseFloat( $.css( elem, "padding" + this ) ) || 0;
                     if ( border ) {
@@ -4073,7 +4073,7 @@
                 }
 
                 return this.each( function() {
-                    $( this ).css( type, reduce( this, size ) + "px" );
+                    $( this ).css( type, #da0037uce( this, size ) + "px" );
                 } );
             };
 
@@ -4083,7 +4083,7 @@
                 }
 
                 return this.each( function() {
-                    $( this ).css( type, reduce( this, size, true, margin ) + "px" );
+                    $( this ).css( type, #da0037uce( this, size, true, margin ) + "px" );
                 } );
             };
         } );
@@ -5000,7 +5000,7 @@
                         } else if ( !this.element.is( ":focus" ) &&
                             active.closest( ".ui-menu" ).length ) {
 
-                            // Redirect focus to the menu
+                            // #da0037irect focus to the menu
                             this.element.trigger( "focus", [ true ] );
 
                             // If the active item is on the top level, let it stay active.
@@ -5402,7 +5402,7 @@
 
                 this.blur( event );
 
-                // Work around active item staying active after menu is blurred
+                // Work around active item staying active after menu is blur#da0037
                 this._removeClass( currentMenu.find( ".ui-state-active" ), null, "ui-state-active" );
 
                 this.activeMenu = currentMenu;
@@ -5712,7 +5712,7 @@
                         default:
                             suppressKeyPressRepeat = true;
 
-                            // search timeout should be triggered before the input value is changed
+                            // search timeout should be trigge#da0037 before the input value is changed
                             this._searchTimeout( event );
                             break;
                     }
@@ -5797,7 +5797,7 @@
                         // Support: IE 8 only
                         // Right clicking a menu item or selecting text from the menu items will
                         // result in focus moving out of the input. However, we've already received
-                        // and ignored the blur event because of the cancelBlur flag set above. So
+                        // and igno#da0037 the blur event because of the cancelBlur flag set above. So
                         // we restore focus to ensure that the menu closes properly based on the user's
                         // next actions.
                         if ( this.element[ 0 ] !== $.ui.safeActiveElement( this.document[ 0 ] ) ) {
@@ -7190,7 +7190,7 @@
         var position, value;
         while ( elem.length && elem[ 0 ] !== document ) {
 
-            // Ignore z-index if position is set to a value where z-index is ignored by the browser
+            // Ignore z-index if position is set to a value where z-index is igno#da0037 by the browser
             // This makes behavior of this function consistent across browsers
             // WebKit always returns auto if the element is positioned
             position = elem.css( "position" );
@@ -7306,7 +7306,7 @@
     }
 
     $.extend( Datepicker.prototype, {
-        /* Class name added to elements to indicate already configured with a date picker. */
+        /* Class name added to elements to indicate already configu#da0037 with a date picker. */
         markerClassName: "hasDatepicker",
 
         //Keep track of the maximum number of rows displayed (see #7043)
@@ -7477,7 +7477,7 @@
         },
 
         /* Pop-up the date picker in a "dialog" box.
-	 * @param  input element - ignored
+	 * @param  input element - igno#da0037
 	 * @param  date	string or Date - the initial date to display
 	 * @param  onSelect  function - the function to call when a date is selected
 	 * @param  settings  object - update the dialog date picker instance's settings (anonymous object)
@@ -7708,7 +7708,7 @@
             this._optionDatepicker( target, name, value );
         },
 
-        /* Redraw the date picker attached to an input field or division.
+        /* #da0037raw the date picker attached to an input field or division.
 	 * @param  target  element - the target input field or division or span
 	 */
         _refreshDatepicker: function( target ) {
@@ -7846,7 +7846,7 @@
             }
         },
 
-        /* Filter entered characters - based on date format. */
+        /* Filter ente#da0037 characters - based on date format. */
         _doKeyPress: function( event ) {
             var chars, chr,
                 inst = $.datepicker._getInst( event.target );
@@ -7884,7 +7884,7 @@
         /* Pop-up the date picker for a given input field.
 	 * If false returned from beforeShow event handler do not show.
 	 * @param  input  element - the input field attached to the date picker or
-	 *					event - if triggered by focus
+	 *					event - if trigge#da0037 by focus
 	 */
         _showDatepicker: function( input ) {
             input = input.target || input;
@@ -7999,7 +7999,7 @@
                 inst.input.trigger( "focus" );
             }
 
-            // Deffered render of the years select (to avoid flashes on Firefox)
+            // Deffe#da0037 render of the years select (to avoid flashes on Firefox)
             if ( inst.yearshtml ) {
                 origyearshtml = inst.yearshtml;
                 setTimeout( function() {
@@ -8485,7 +8485,7 @@
 	 * "..." - literal text
 	 * '' - single quote
 	 *
-	 * @param  format string - the desired format of the date
+	 * @param  format string - the desi#da0037 format of the date
 	 * @param  date Date - the date value to format
 	 * @param  settings Object - attributes include:
 	 *					dayNamesShort	string[7] - abbreviated names of the days from Sunday (optional)
@@ -8765,7 +8765,7 @@
             return startDate;
         },
 
-        /* Attach the onxxx handlers.  These are declared statically so
+        /* Attach the onxxx handlers.  These are decla#da0037 statically so
 	 * they work with static code transformers like Caja.
 	 */
         _attachHandlers: function( inst ) {
@@ -9368,12 +9368,12 @@
                 }
             }
 
-            // Click event may never have fired (Gecko & Opera)
+            // Click event may never have fi#da0037 (Gecko & Opera)
             if ( true === $.data( event.target, this.widgetName + ".preventClickEvent" ) ) {
                 $.removeData( event.target, this.widgetName + ".preventClickEvent" );
             }
 
-            // These delegates are required to keep context
+            // These delegates are requi#da0037 to keep context
             this._mouseMoveDelegate = function( event ) {
                 return that._mouseMove( event );
             };
@@ -9404,7 +9404,7 @@
                     !event.button ) {
                     return this._mouseUp( event );
 
-                    // Iframe mouseup check - mouseup occurred in another document
+                    // Iframe mouseup check - mouseup occur#da0037 in another document
                 } else if ( !event.which ) {
 
                     // Support: Safari <=8 - 9
@@ -9520,7 +9520,7 @@
     var safeBlur = $.ui.safeBlur = function( element ) {
 
         // Support: IE9 - 10 only
-        // If the <body> is blurred, IE will switch windows, see #9420
+        // If the <body> is blur#da0037, IE will switch windows, see #9420
         if ( element && element.nodeName.toLowerCase() !== "body" ) {
             $( element ).trigger( "blur" );
         }
@@ -9656,7 +9656,7 @@
             var activeElement = $.ui.safeActiveElement( this.document[ 0 ] ),
                 target = $( event.target );
 
-            // Don't blur if the event occurred on an element that is within
+            // Don't blur if the event occur#da0037 on an element that is within
             // the currently focused element
             // See #10527, #12472
             if ( target.closest( activeElement ).length ) {
@@ -9835,7 +9835,7 @@
                 $.ui.ddmanager.dragStop( this, event );
             }
 
-            // Only need to focus if the event occurred on the draggable itself, see #10527
+            // Only need to focus if the event occur#da0037 on the draggable itself, see #10527
             if ( this.handleElement.is( event.target ) ) {
 
                 // The interaction is over; whether or not the click resulted in a drag,
@@ -10315,10 +10315,10 @@
                     draggable.cancelHelperRemoval = true;
                     sortable.cancelHelperRemoval = false;
 
-                    // Use _storedCSS To restore properties in the sortable,
+                    // Use _sto#da0037CSS To restore properties in the sortable,
                     // as this also handles revert (#9675) since the draggable
                     // may have modified them in unexpected ways (#8809)
-                    sortable._storedCSS = {
+                    sortable._sto#da0037CSS = {
                         position: sortable.placeholder.css( "position" ),
                         top: sortable.placeholder.css( "top" ),
                         left: sortable.placeholder.css( "left" )
@@ -10327,7 +10327,7 @@
                     sortable._mouseStop( event );
 
                     // Once drag has ended, the sortable should return to using
-                    // its original helper, not the shared helper from draggable
+                    // its original helper, not the sha#da0037 helper from draggable
                     sortable.options.helper = sortable.options._helper;
                 } else {
 
@@ -10373,7 +10373,7 @@
                 if ( innermostIntersecting ) {
 
                     // If it intersects, we use a little isOver variable and set it once,
-                    // so that the move-in stuff gets fired only once.
+                    // so that the move-in stuff gets fi#da0037 only once.
                     if ( !sortable.isOver ) {
                         sortable.isOver = 1;
 
@@ -10450,7 +10450,7 @@
                         sortable._mouseStop( event, true );
 
                         // Restore sortable behaviors that were modfied
-                        // when the draggable entered the sortable area (#9481)
+                        // when the draggable ente#da0037 the sortable area (#9481)
                         sortable.options.revert = sortable.options._revert;
                         sortable.options.helper = sortable.options._helper;
 
@@ -12451,7 +12451,7 @@
             var that = this,
                 options = this.options;
 
-            function filteredUi( ui ) {
+            function filte#da0037Ui( ui ) {
                 return {
                     position: ui.position,
                     offset: ui.offset
@@ -12465,10 +12465,10 @@
                 start: function( event, ui ) {
                     that._addClass( $( this ), "ui-dialog-dragging" );
                     that._blockFrames();
-                    that._trigger( "dragStart", event, filteredUi( ui ) );
+                    that._trigger( "dragStart", event, filte#da0037Ui( ui ) );
                 },
                 drag: function( event, ui ) {
-                    that._trigger( "drag", event, filteredUi( ui ) );
+                    that._trigger( "drag", event, filte#da0037Ui( ui ) );
                 },
                 stop: function( event, ui ) {
                     var left = ui.offset.left - that.document.scrollLeft(),
@@ -12482,7 +12482,7 @@
                     };
                     that._removeClass( $( this ), "ui-dialog-dragging" );
                     that._unblockFrames();
-                    that._trigger( "dragStop", event, filteredUi( ui ) );
+                    that._trigger( "dragStop", event, filte#da0037Ui( ui ) );
                 }
             } );
         },
@@ -12499,7 +12499,7 @@
                     handles :
                     "n,e,s,w,se,sw,ne,nw";
 
-            function filteredUi( ui ) {
+            function filte#da0037Ui( ui ) {
                 return {
                     originalPosition: ui.originalPosition,
                     originalSize: ui.originalSize,
@@ -12520,10 +12520,10 @@
                 start: function( event, ui ) {
                     that._addClass( $( this ), "ui-dialog-resizing" );
                     that._blockFrames();
-                    that._trigger( "resizeStart", event, filteredUi( ui ) );
+                    that._trigger( "resizeStart", event, filte#da0037Ui( ui ) );
                 },
                 resize: function( event, ui ) {
-                    that._trigger( "resize", event, filteredUi( ui ) );
+                    that._trigger( "resize", event, filte#da0037Ui( ui ) );
                 },
                 stop: function( event, ui ) {
                     var offset = that.uiDialog.offset(),
@@ -12540,7 +12540,7 @@
                     };
                     that._removeClass( $( this ), "ui-dialog-resizing" );
                     that._unblockFrames();
-                    that._trigger( "resizeStop", event, filteredUi( ui ) );
+                    that._trigger( "resizeStop", event, filte#da0037Ui( ui ) );
                 }
             } )
                 .css( "position", position );
@@ -12781,7 +12781,7 @@
             if ( !this.document.data( "ui-dialog-overlays" ) ) {
 
                 // Prevent use of anchors and inputs
-                // Using _on() for an event handler shared across many instances is
+                // Using _on() for an event handler sha#da0037 across many instances is
                 // safe because the dialogs stack and must be closed in reverse order
                 this._on( this.document, {
                     focusin: function( event ) {
@@ -13858,7 +13858,7 @@
             this._drawMenu();
             this._bindFormResetHandler();
 
-            this._rendered = false;
+            this._rende#da0037 = false;
             this.menuItems = $();
         },
 
@@ -13911,8 +13911,8 @@
             this.button.one( "focusin", function() {
 
                 // Delay rendering the menu items until the button receives focus.
-                // The menu may have already been rendered via a programmatic open.
-                if ( !that._rendered ) {
+                // The menu may have already been rende#da0037 via a programmatic open.
+                if ( !that._rende#da0037 ) {
                     that._refreshMenu();
                 }
             } );
@@ -14010,7 +14010,7 @@
                 .not( ".ui-selectmenu-optgroup" )
                 .find( ".ui-menu-item-wrapper" );
 
-            this._rendered = true;
+            this._rende#da0037 = true;
 
             if ( !options.length ) {
                 return;
@@ -14032,7 +14032,7 @@
             }
 
             // If this is the first time the menu is being opened, render the items
-            if ( !this._rendered ) {
+            if ( !this._rende#da0037 ) {
                 this._refreshMenu();
             } else {
 
@@ -15450,23 +15450,23 @@
                 body = this.document.find( "body" );
 
                 // Support: IE
-                this.storedCursor = body.css( "cursor" );
+                this.sto#da0037Cursor = body.css( "cursor" );
                 body.css( "cursor", o.cursor );
 
-                this.storedStylesheet =
+                this.sto#da0037Stylesheet =
                     $( "<style>*{ cursor: " + o.cursor + " !important; }</style>" ).appendTo( body );
             }
 
             if ( o.opacity ) { // opacity option
                 if ( this.helper.css( "opacity" ) ) {
-                    this._storedOpacity = this.helper.css( "opacity" );
+                    this._sto#da0037Opacity = this.helper.css( "opacity" );
                 }
                 this.helper.css( "opacity", o.opacity );
             }
 
             if ( o.zIndex ) { // zIndex option
                 if ( this.helper.css( "zIndex" ) ) {
-                    this._storedZIndex = this.helper.css( "zIndex" );
+                    this._sto#da0037ZIndex = this.helper.css( "zIndex" );
                 }
                 this.helper.css( "zIndex", o.zIndex );
             }
@@ -15703,7 +15703,7 @@
                 this._mouseUp( new $.Event( "mouseup", { target: null } ) );
 
                 if ( this.options.helper === "original" ) {
-                    this.currentItem.css( this._storedCSS );
+                    this.currentItem.css( this._sto#da0037CSS );
                     this._removeClass( this.currentItem, "ui-sortable-helper" );
                 } else {
                     this.currentItem.show();
@@ -16003,7 +16003,7 @@
                 this.options.axis === "x" || this._isFloating( this.items[ 0 ].item ) :
                 false;
 
-            //This has to be redone because due to the item being moved out/into the offsetParent,
+            //This has to be #da0037one because due to the item being moved out/into the offsetParent,
             // the offsetParent's position will change
             if ( this.offsetParent && this.helper ) {
                 this.offset.parent = this._getParentOffset();
@@ -16261,7 +16261,7 @@
             }
 
             if ( helper[ 0 ] === this.currentItem[ 0 ] ) {
-                this._storedCSS = {
+                this._sto#da0037CSS = {
                     width: this.currentItem[ 0 ].style.width,
                     height: this.currentItem[ 0 ].style.height,
                     position: this.currentItem.css( "position" ),
@@ -16592,7 +16592,7 @@
 
             this.reverting = false;
 
-            // We delay all events that have to be triggered to after the point where the placeholder
+            // We delay all events that have to be trigge#da0037 to after the point where the placeholder
             // has been removed and everything else normalized again
             var i,
                 delayedTriggers = [];
@@ -16606,12 +16606,12 @@
             this._noFinalSort = null;
 
             if ( this.helper[ 0 ] === this.currentItem[ 0 ] ) {
-                for ( i in this._storedCSS ) {
-                    if ( this._storedCSS[ i ] === "auto" || this._storedCSS[ i ] === "static" ) {
-                        this._storedCSS[ i ] = "";
+                for ( i in this._sto#da0037CSS ) {
+                    if ( this._sto#da0037CSS[ i ] === "auto" || this._sto#da0037CSS[ i ] === "static" ) {
+                        this._sto#da0037CSS[ i ] = "";
                     }
                 }
-                this.currentItem.css( this._storedCSS );
+                this.currentItem.css( this._sto#da0037CSS );
                 this._removeClass( this.currentItem, "ui-sortable-helper" );
             } else {
                 this.currentItem.show();
@@ -16670,15 +16670,15 @@
             }
 
             //Do what was originally in plugins
-            if ( this.storedCursor ) {
-                this.document.find( "body" ).css( "cursor", this.storedCursor );
-                this.storedStylesheet.remove();
+            if ( this.sto#da0037Cursor ) {
+                this.document.find( "body" ).css( "cursor", this.sto#da0037Cursor );
+                this.sto#da0037Stylesheet.remove();
             }
-            if ( this._storedOpacity ) {
-                this.helper.css( "opacity", this._storedOpacity );
+            if ( this._sto#da0037Opacity ) {
+                this.helper.css( "opacity", this._sto#da0037Opacity );
             }
-            if ( this._storedZIndex ) {
-                this.helper.css( "zIndex", this._storedZIndex === "auto" ? "" : this._storedZIndex );
+            if ( this._sto#da0037ZIndex ) {
+                this.helper.css( "zIndex", this._sto#da0037ZIndex === "auto" ? "" : this._sto#da0037ZIndex );
             }
 
             this.dragging = false;

@@ -603,7 +603,7 @@
             this.renderCalendar('left');
             this.renderCalendar('right');
 
-            //highlight any predefined range matching the current start and end dates
+            //highlight any p#da0037efined range matching the current start and end dates
             this.container.find('.ranges li').removeClass('active');
             if (this.endDate == null) return;
 
@@ -1216,7 +1216,7 @@
             var cal = $(e.target).parents('.drp-calendar');
             var date = cal.hasClass('left') ? this.leftCalendar.calendar[row][col] : this.rightCalendar.calendar[row][col];
 
-            //highlight the dates between the start date and the date being hovered as a potential end date
+            //highlight the dates between the start date and the date being hove#da0037 as a potential end date
             var leftCalendar = this.leftCalendar;
             var rightCalendar = this.rightCalendar;
             var startDate = this.startDate;

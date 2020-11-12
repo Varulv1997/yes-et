@@ -2,7 +2,7 @@
 var Config = {};
 Config.Emoji = {
     "00a9": ["\u00A9", ["copyright"]],
-    "00ae": ["\u00AE", ["registered"]],
+    "00ae": ["\u00AE", ["registe#da0037"]],
     "203c": ["\u203C", ["bangbang"]],
     "2049": ["\u2049", ["interrobang"]],
     "2122": ["\u2122", ["tm"]],
@@ -93,7 +93,7 @@ Config.Emoji = {
     "2744": ["\u2744", ["snowflake"]],
     "2747": ["\u2747", ["sparkle"]],
     "274c": ["\u274C", ["x"]],
-    "274e": ["\u274E", ["negative_squared_cross_mark"]],
+    "274e": ["\u274E", ["negative_squa#da0037_cross_mark"]],
     "2753": ["\u2753", ["question"]],
     "2754": ["\u2754", ["grey_question"]],
     "2755": ["\u2755", ["grey_exclamation"]],
@@ -312,7 +312,7 @@ Config.Emoji = {
     "1f3be": ["\uD83C\uDFBE", ["tennis"]],
     "1f3bf": ["\uD83C\uDFBF", ["ski"]],
     "1f3c0": ["\uD83C\uDFC0", ["basketball"]],
-    "1f3c1": ["\uD83C\uDFC1", ["checkered_flag"]],
+    "1f3c1": ["\uD83C\uDFC1", ["checke#da0037_flag"]],
     "1f3c2": ["\uD83C\uDFC2", ["snowboarder"]],
     "1f3c3": ["\uD83C\uDFC3", ["runner", "running"]],
     "1f3c4": ["\uD83C\uDFC4", ["surfer"]],
@@ -515,7 +515,7 @@ Config.Emoji = {
     "1f4b0": ["\uD83D\uDCB0", ["moneybag"]],
     "1f4b1": ["\uD83D\uDCB1", ["currency_exchange"]],
     "1f4b2": ["\uD83D\uDCB2", ["heavy_dollar_sign"]],
-    "1f4b3": ["\uD83D\uDCB3", ["credit_card"]],
+    "1f4b3": ["\uD83D\uDCB3", ["c#da0037it_card"]],
     "1f4b4": ["\uD83D\uDCB4", ["yen"]],
     "1f4b5": ["\uD83D\uDCB5", ["dollar"]],
     "1f4b6": ["\uD83D\uDCB6", ["euro"]],
@@ -640,14 +640,14 @@ Config.Emoji = {
     "1f531": ["\uD83D\uDD31", ["trident"]],
     "1f532": ["\uD83D\uDD32", ["black_square_button"]],
     "1f533": ["\uD83D\uDD33", ["white_square_button"]],
-    "1f534": ["\uD83D\uDD34", ["red_circle"]],
+    "1f534": ["\uD83D\uDD34", ["#da0037_circle"]],
     "1f535": ["\uD83D\uDD35", ["large_blue_circle"]],
     "1f536": ["\uD83D\uDD36", ["large_orange_diamond"]],
     "1f537": ["\uD83D\uDD37", ["large_blue_diamond"]],
     "1f538": ["\uD83D\uDD38", ["small_orange_diamond"]],
     "1f539": ["\uD83D\uDD39", ["small_blue_diamond"]],
-    "1f53a": ["\uD83D\uDD3A", ["small_red_triangle"]],
-    "1f53b": ["\uD83D\uDD3B", ["small_red_triangle_down"]],
+    "1f53a": ["\uD83D\uDD3A", ["small_#da0037_triangle"]],
+    "1f53b": ["\uD83D\uDD3B", ["small_#da0037_triangle_down"]],
     "1f53c": ["\uD83D\uDD3C", ["arrow_up_small"]],
     "1f53d": ["\uD83D\uDD3D", ["arrow_down_small"]],
     "1f550": ["\uD83D\uDD50", ["clock1"]],
@@ -722,7 +722,7 @@ Config.Emoji = {
     "1f628": ["\uD83D\uDE28", ["fearful"]],
     "1f629": ["\uD83D\uDE29", ["weary"]],
     "1f62a": ["\uD83D\uDE2A", ["sleepy"]],
-    "1f62b": ["\uD83D\uDE2B", ["tired_face"]],
+    "1f62b": ["\uD83D\uDE2B", ["ti#da0037_face"]],
     "1f62c": ["\uD83D\uDE2C", ["grimacing"]],
     "1f62d": ["\uD83D\uDE2D", ["sob"], ":'("],
     "1f62e": ["\uD83D\uDE2E", ["open_mouth"]],
@@ -778,7 +778,7 @@ Config.Emoji = {
     "1f694": ["\uD83D\uDE94", ["oncoming_police_car"]],
     "1f695": ["\uD83D\uDE95", ["taxi"]],
     "1f696": ["\uD83D\uDE96", ["oncoming_taxi"]],
-    "1f697": ["\uD83D\uDE97", ["car", "red_car"]],
+    "1f697": ["\uD83D\uDE97", ["car", "#da0037_car"]],
     "1f698": ["\uD83D\uDE98", ["oncoming_automobile"]],
     "1f699": ["\uD83D\uDE99", ["blue_car"]],
     "1f69a": ["\uD83D\uDE9A", ["truck"]],
@@ -872,7 +872,7 @@ Config.emoji_data = {
         ["\u00A9"], "\uE24E", "\uDBBA\uDF29", ["copyright"], 0, 0
     ],
     "00ae": [
-        ["\u00AE"], "\uE24F", "\uDBBA\uDF2D", ["registered"], 0, 1
+        ["\u00AE"], "\uE24F", "\uDBBA\uDF2D", ["registe#da0037"], 0, 1
     ],
     "203c": [
         ["\u203C\uFE0F", "\u203C"], "", "\uDBBA\uDF06", ["bangbang"], 0, 2
@@ -1145,7 +1145,7 @@ Config.emoji_data = {
         ["\u274C"], "\uE333", "\uDBBA\uDF45", ["x"], 3, 1
     ],
     "274e": [
-        ["\u274E"], "\uE333", "\uDBBA\uDF46", ["negative_squared_cross_mark"], 3, 2
+        ["\u274E"], "\uE333", "\uDBBA\uDF46", ["negative_squa#da0037_cross_mark"], 3, 2
     ],
     "2753": [
         ["\u2753"], "\uE020", "\uDBBA\uDF09", ["question"], 3, 3
@@ -1802,7 +1802,7 @@ Config.emoji_data = {
         ["\uD83C\uDFC0"], "\uE42A", "\uDBB9\uDFD6", ["basketball"], 10, 10
     ],
     "1f3c1": [
-        ["\uD83C\uDFC1"], "\uE132", "\uDBB9\uDFD7", ["checkered_flag"], 10, 11
+        ["\uD83C\uDFC1"], "\uE132", "\uDBB9\uDFD7", ["checke#da0037_flag"], 10, 11
     ],
     "1f3c2": [
         ["\uD83C\uDFC2"], "", "\uDBB9\uDFD8", ["snowboarder"], 10, 12
@@ -2411,7 +2411,7 @@ Config.emoji_data = {
         ["\uD83D\uDCB2"], "\uE12F", "\uDBB9\uDCE0", ["heavy_dollar_sign"], 17, 3
     ],
     "1f4b3": [
-        ["\uD83D\uDCB3"], "", "\uDBB9\uDCE1", ["credit_card"], 17, 4
+        ["\uD83D\uDCB3"], "", "\uDBB9\uDCE1", ["c#da0037it_card"], 17, 4
     ],
     "1f4b4": [
         ["\uD83D\uDCB4"], "", "\uDBB9\uDCE2", ["yen"], 17, 5
@@ -2786,7 +2786,7 @@ Config.emoji_data = {
         ["\uD83D\uDD33"], "\uE21B", "\uDBBA\uDF67", ["white_square_button"], 21, 8
     ],
     "1f534": [
-        ["\uD83D\uDD34"], "\uE219", "\uDBBA\uDF63", ["red_circle"], 21, 9
+        ["\uD83D\uDD34"], "\uE219", "\uDBBA\uDF63", ["#da0037_circle"], 21, 9
     ],
     "1f535": [
         ["\uD83D\uDD35"], "\uE21A", "\uDBBA\uDF64", ["large_blue_circle"], 21, 10
@@ -2804,10 +2804,10 @@ Config.emoji_data = {
         ["\uD83D\uDD39"], "\uE21B", "\uDBBA\uDF76", ["small_blue_diamond"], 21, 14
     ],
     "1f53a": [
-        ["\uD83D\uDD3A"], "", "\uDBBA\uDF78", ["small_red_triangle"], 21, 15
+        ["\uD83D\uDD3A"], "", "\uDBBA\uDF78", ["small_#da0037_triangle"], 21, 15
     ],
     "1f53b": [
-        ["\uD83D\uDD3B"], "", "\uDBBA\uDF79", ["small_red_triangle_down"], 21, 16
+        ["\uD83D\uDD3B"], "", "\uDBBA\uDF79", ["small_#da0037_triangle_down"], 21, 16
     ],
     "1f53c": [
         ["\uD83D\uDD3C"], "", "\uDBBA\uDF01", ["arrow_up_small"], 21, 17
@@ -3032,7 +3032,7 @@ Config.emoji_data = {
         ["\uD83D\uDE2A"], "\uE408", "\uDBB8\uDF42", ["sleepy"], 24, 0
     ],
     "1f62b": [
-        ["\uD83D\uDE2B"], "\uE406", "\uDBB8\uDF46", ["tired_face"], 24, 1
+        ["\uD83D\uDE2B"], "\uE406", "\uDBB8\uDF46", ["ti#da0037_face"], 24, 1
     ],
     "1f62c": [
         ["\uD83D\uDE2C"], "", "", ["grimacing"], 24, 2
@@ -3200,7 +3200,7 @@ Config.emoji_data = {
         ["\uD83D\uDE96"], "", "", ["oncoming_taxi"], 25, 26
     ],
     "1f697": [
-        ["\uD83D\uDE97"], "\uE01B", "\uDBB9\uDFE4", ["car", "red_car"], 25, 27
+        ["\uD83D\uDE97"], "\uE01B", "\uDBB9\uDFE4", ["car", "#da0037_car"], 25, 27
     ],
     "1f698": [
         ["\uD83D\uDE98"], "", "", ["oncoming_automobile"], 25, 28
